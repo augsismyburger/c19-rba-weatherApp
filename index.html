@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="materialize/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">   
+        <div id="pageContent">
+            <h1>Get Your Weather. It's very weathery today.</h1>
+            <input id="zipInput" type='text' maxlength="5" placeholder="Enter Your Zip Code" required>
+            <button id="getWeatherBtn" type="button">Get Your Weather</button>
+        </div>
+        <div id="weatherContent"></div>
+        <div id="forecastContent"></div>
+    </div>
+
+
+    <script src="materialize/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="materialize/materialize.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="dist/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
