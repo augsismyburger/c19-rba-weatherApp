@@ -10,6 +10,15 @@ function writeWeather(weatherObj) {
 
 function writeForecast(weatherObj) {
     console.log('three day ob', weatherObj);
+    var d = new Date();
+    let j = 0;
+    for (let i = 0; i < weatherObj.forecastday.length; i++) {
+
+        weatherObj.forecastday[i].date = d.getDate() + j;
+        if (i % 2) {
+            j++;
+        }
+    }
     $('#forecastContent').html(forecastTemplate(weatherObj));
 }
 
